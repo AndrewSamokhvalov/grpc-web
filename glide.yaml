@@ -1,0 +1,52 @@
+package: github.com/AndrewSamokhvalov/grpc-web
+import:
+- package: github.com/golang/protobuf
+  subpackages:
+  - ptypes/empty
+- package: github.com/grpc-ecosystem/go-grpc-middleware
+  subpackages:
+  - logging/logrus
+- package: github.com/grpc-ecosystem/go-grpc-prometheus
+  version: ^1.1.0
+- package: github.com/improbable-eng/grpc-web
+  version: ^0.3.0-beta
+  subpackages:
+  - go/grpcweb
+  - test/go/_proto/improbable/grpcweb/test
+- package: github.com/mwitkow/go-conntrack
+  subpackages:
+  - connhelpers
+- package: github.com/mwitkow/grpc-proxy
+  version: ^0.1.0
+  subpackages:
+  - proxy
+- package: github.com/prometheus/client_golang
+  version: ^0.9.0-pre1
+  subpackages:
+  - prometheus/promhttp
+- package: github.com/rs/cors
+  version: ^1.2.0
+- package: github.com/sirupsen/logrus
+  version: ^1.0.3
+- package: github.com/spf13/pflag
+  version: ^1.0.0
+- package: golang.org/x/net
+  subpackages:
+  - context
+  - http2
+  - trace
+- package: google.golang.org/grpc
+  version: ^1.7.0
+  subpackages:
+  - codes
+  - credentials
+  - grpclog
+  - metadata
+  - transport
+testImport:
+- package: github.com/stretchr/testify
+  version: ^1.1.4
+  subpackages:
+  - assert
+  - require
+  - suite
